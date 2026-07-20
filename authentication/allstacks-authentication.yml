@@ -1,0 +1,33 @@
+generated: '2026-07-17'
+method: searched
+source: https://app.allstacks.com/.well-known/oauth-authorization-server
+docs: https://app.allstacks.com/.well-known/oauth-protected-resource
+summary:
+  types: [oauth2]
+  oauth2_flows: [authorizationCode]
+  pkce: S256
+  dynamic_client_registration: true
+  bearer_methods: [header]
+schemes:
+- name: OAuth2
+  type: oauth2
+  source: well-known/allstacks-oauth-authorization-server.json
+  issuer: https://app.allstacks.com
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://app.allstacks.com/oauth/authorize/
+    tokenUrl: https://app.allstacks.com/oauth/token/
+    registrationUrl: https://app.allstacks.com/oauth/register/
+    code_challenge_methods: [S256]
+    token_endpoint_auth_methods: [none]
+    grant_types: [authorization_code, refresh_token]
+    scopes:
+    - connector
+notes: >-
+  Derived from Allstacks' live RFC 8414 authorization-server metadata and RFC 9728
+  protected-resource metadata on app.allstacks.com. Access is OAuth 2.0
+  authorization-code with mandatory PKCE (S256) and RFC 7591 dynamic client
+  registration; protected resources accept bearer tokens via the Authorization
+  header. A single "connector" scope is advertised. No public OpenAPI is published,
+  so this profile is grounded in the well-known discovery documents rather than a
+  spec.
