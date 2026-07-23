@@ -1,0 +1,24 @@
+generated: '2026-07-17'
+method: searched
+probe: true
+url: https://trust.allstacks.com/
+source: https://www.allstacks.com/policy/security
+certifications:
+- SOC 2 Type I
+- SOC 2 Type II
+- GDPR
+security_contact: security@allstacks.com
+practices:
+- Twice-yearly third-party penetration testing
+evidence:
+- source: https://trust.allstacks.com/
+  keywords:
+  - soc 2 type i
+  - soc 2 type ii
+  - gdpr
+  - trust dashboard
+- source: https://www.allstacks.com/policy/security
+  keywords:
+  - soc 2 type ii certified
+  - gdpr
+  - penetration test

@@ -1,7 +1,27 @@
 aid: allstacks
 name: Allstacks
-description: Allstacks is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Allstacks is an agentic platform for product and software development that helps
+  engineering organizations plan, manage, measure, and optimize how software gets
+  built. It unifies data from development tools (issue trackers, source control, CI/CD)
+  into Software Engineering Intelligence to surface delivery risk and measure AI impact,
+  a Product Studio for grounding requirements in code and customer feedback, and
+  Software Cost Capitalization to automate R&D capitalization reporting without
+  timesheets. Allstacks was surfaced as a Techstars portfolio company and added to the
+  API Evangelist network; this profile is enriched from the company's public surface.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6a1d6f717b914dbee6bc1efd/6a44c1bc640214868b702ba8_AS-opengraph-1-v1_Hero.png
 url: https://raw.githubusercontent.com/api-evangelist/allstacks/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,6 +34,12 @@ created: '2026-07-17'
 modified: '2026-07-17'
 tags:
 - Company
+- Software Engineering Intelligence
+- Value Stream Management
+- Developer Productivity
+- DevOps
+- Analytics
+- AI Agents
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,36 @@ maintainers:
 common:
 - type: Website
   url: https://allstacks.com/
+- type: Blog
+  url: https://www.allstacks.com/blog
+- type: Pricing
+  url: https://www.allstacks.com/pricing
+- type: SignUp
+  url: https://app.allstacks.com/signup/
+- type: Login
+  url: https://app.allstacks.com/
+- type: PrivacyPolicy
+  url: https://www.allstacks.com/legal/privacy-policy
+- type: TermsOfService
+  url: https://www.allstacks.com/legal/software-as-a-service-saas-agreement
+- type: Security
+  url: https://www.allstacks.com/policy/security
+- type: Compliance
+  url: https://trust.allstacks.com/
+- type: TrustCenter
+  url: security/allstacks-trust-center.yml
+- type: DomainSecurity
+  url: security/allstacks-domain-security.yml
+- type: WellKnown
+  url: well-known/allstacks-well-known.yml
+- type: Authentication
+  url: authentication/allstacks-authentication.yml
+- type: OAuthScopes
+  url: scopes/allstacks-scopes.yml
+- type: Conformance
+  url: conformance/allstacks-conformance.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

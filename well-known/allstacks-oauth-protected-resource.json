@@ -1,0 +1,1 @@
+{"resource": "https://app.allstacks.com", "authorization_servers": ["https://app.allstacks.com"], "scopes_supported": ["connector"], "bearer_methods_supported": ["header"]}

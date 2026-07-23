@@ -1,0 +1,23 @@
+generated: '2026-07-17'
+method: searched
+source: https://app.allstacks.com/.well-known/oauth-authorization-server
+docs: https://app.allstacks.com/.well-known/oauth-protected-resource
+schemes:
+- name: OAuth2
+  source: well-known/allstacks-oauth-authorization-server.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://app.allstacks.com/oauth/authorize/
+    tokenUrl: https://app.allstacks.com/oauth/token/
+scopes:
+- scope: connector
+  description: >-
+    Access granted to a registered connector/agent integration against the
+    Allstacks platform. This is the only scope advertised in the authorization
+    server and protected-resource metadata (scopes_supported: ["connector"]).
+  flows: [authorizationCode]
+  sources: [well-known/allstacks-oauth-authorization-server.json]
+notes: >-
+  Scopes captured verbatim from Allstacks' live OAuth discovery metadata. The
+  platform publishes exactly one OAuth scope ("connector"); no broader scope /
+  permission reference is published publicly.
