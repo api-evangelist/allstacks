@@ -68,7 +68,7 @@ edges:
     registered_name: com.allstacks/allstacks-mcp
     register_id: com.allstacks/allstacks-mcp
     detected_by: sweep-agent-tools.py
-    detected: '2026-10-14'
+    detected: '2026-10-15'
   mcp_registry:
     servers:
     - com.allstacks/allstacks-mcp
